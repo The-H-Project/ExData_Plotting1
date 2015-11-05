@@ -19,10 +19,13 @@ graphset[,DateTime := as.POSIXct(paste(graphset$Date,graphset$Time))]
 graphset[,Date:= NULL]
 graphset[,Time:= NULL]
 
+# Open the png plot device.
+png(filename='plot2.png')
+
+# Plot the graph.
 plot(graphset$DateTime, graphset$Global_active_power, type='s', xlab='', 
      ylab='Global Active Power (kilowatts)')
 
-# Export the graph to a png file.
-dev.copy(png, './Exploratory\ Data\ Analysis/ExData_Plotting1/plot2.png')
+# Close the plot device.
 dev.off()
 
