@@ -23,7 +23,7 @@ png(filename='plot4.png')
 par(mfrow=c(2,2))
 
 # Draw the first graph (upper left).
-plot(graphset$DateTime, graphset$Global_active_power, type='s', xlab='', ylab='Global Active Power (kilowatts)')
+plot(graphset$DateTime, graphset$Global_active_power, type='s', xlab='', ylab='Global Active Power')
 
 # Draw the second graph (upper right).
 plot(graphset$DateTime, graphset$Voltage, type='s', xlab='datetime', ylab='Voltage')
