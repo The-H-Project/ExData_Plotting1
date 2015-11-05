@@ -2,8 +2,9 @@
 # data.table 1.9.6 or higher
 library(data.table)
 
-# Load the data file.
-dataset <- fread('./Exploratory Data Analysis/household_power_consumption.txt', na.strings='?')
+# Load the data file. It is kept one level above the project working directory, because the 
+# git repository may only include the R and .png files.
+dataset <- fread('../household_power_consumption.txt', na.strings='?')
 
 # Convert date and time text data into values.
 dataset$Date <- as.Date(dataset$Date, format='%d/%m/%Y')
