@@ -32,7 +32,7 @@ plot(graphset$DateTime, graphset$Voltage, type='s', xlab='datetime', ylab='Volta
 plot(graphset$DateTime, graphset$Sub_metering_1, xlab='', ylab='Energy sub-metering', type='s')
 lines(graphset$DateTime, graphset$Sub_metering_2, col=2)
 lines(graphset$DateTime, graphset$Sub_metering_3, col='blue')
-legend ('topright', col=c('black','red','blue'), lwd=1,
+legend ('topright', col=c('black','red','blue'), lwd=1, bty='n',
        legend=c('Sub_metering_1','Sub_metering_2', 'Sub_metering_3'))
 
 # Draw the fourth graph (lower right).
