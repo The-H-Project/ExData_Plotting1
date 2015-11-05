@@ -20,7 +20,7 @@ graphset[,DateTime := as.POSIXct(paste(graphset$Date,graphset$Time))]
 png(filename='plot1.png')
 
 # Draw the graph.
-hist(graphset$Global_active_power, col=34, main='Global Active Power', xlab='Global Active Power (kilowatts)', yaxs='i')
+hist(graphset$Global_active_power, col=2, main='Global Active Power', xlab='Global Active Power (kilowatts)', yaxs='i')
 
 # Close the plot device.
 dev.off()
