@@ -17,7 +17,7 @@ rm(dataset)
 graphset[,DateTime := as.POSIXct(paste(graphset$Date,graphset$Time))]
 
 # Open the png plot device.
-png(filename='plot3.png')
+png(filename='plot3.png', bg='transparent')
 
 # Draw the graph.
 plot(graphset$DateTime, graphset$Sub_metering_1, xlab='', ylab='Energy sub-metering', type='s')

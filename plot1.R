@@ -17,7 +17,7 @@ rm(dataset)
 graphset[,DateTime := as.POSIXct(paste(graphset$Date,graphset$Time))]
 
 # Open the png plot device.
-png(filename='plot1.png')
+png(filename='plot1.png', bg='transparent')
 
 # Draw the graph.
 hist(graphset$Global_active_power, col=2, main='Global Active Power', xlab='Global Active Power (kilowatts)', yaxs='i')

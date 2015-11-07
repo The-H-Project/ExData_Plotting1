@@ -17,7 +17,7 @@ rm(dataset)
 graphset[,DateTime := as.POSIXct(paste(graphset$Date,graphset$Time))]
 
 # Open the png plot device.
-png(filename='plot4.png')
+png(filename='plot4.png', bg='transparent')
 
 # Create a 2x2 window frame.
 par(mfrow=c(2,2))

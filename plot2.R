@@ -20,7 +20,7 @@ graphset[,Date:= NULL]
 graphset[,Time:= NULL]
 
 # Open the png plot device.
-png(filename='plot2.png')
+png(filename='plot2.png', bg='transparent')
 
 # Plot the graph.
 plot(graphset$DateTime, graphset$Global_active_power, type='s', xlab='', 
